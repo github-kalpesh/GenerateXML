@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Generae form to XML</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="Assets/CSS/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <strong>XML</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About XML</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-github mr-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link border border-light rounded">
+                <i class="fas fa-user mr-2"></i>Sing Up
+              </a>
+            </li>
+          </ul>
+          <!-- Right -->
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+
+    <!-- Full Page Intro -->
+  </header>
+
+  <!--Main layout-->
+  <main>
+    <div class="view full-page-intro">
+
+      <!--Video source-->
+      <video class="video-intro" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Mask & flexbox options-->
+      <div class="mask d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row d-flex h-100 justify-content-center align-items-center">
+            <div class="col-md-7 m-x-auto pull-xs-none">
+              <div class="jumbotron">
+                <h2 class="h2-responsive"><strong>Generate XML</strong></h2>
+                <p>Fill form and generate XML </p>
+                <!-- <hr class="m-y-2"> -->
+                <!--Naked Form-->
+                <div class="card-block">
+                  <!--Body-->
+                  <form action="#">
+                    <!-- Basic textbox -->
+                    <div class="md-form">
+                      <input type="text" name="Name" class="form-control">
+                      <label for="form1" class="">Your Name</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" name="DOB" class="form-control">
+                      <label for="form1" class="">Date of Birth</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" name="AadharNumber" class="form-control">
+                      <label for="form1" class="">Aadhar number</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" name="PANNumber" class="form-control">
+                      <label for="form1" class="">PAN number</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="number" name="MobileNumber" class="form-control">
+                      <label for="form1" class="">Mobile number</label>
+                    </div>
+                    <div class="md-form">
+                      <input  name="EmailAddress" class="form-control">
+                      <label for="form1" class="">Email address</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" multiple name="Address" class="form-control">
+                      <label for="form1" class="">Address</label>
+                    </div>
+                    <div class="wrap pt-2">
+                      <!--Select with pure css-->
+                      <div class="select">
+                        <select class="select-text" id="cboHavePassport" name="HavePassport">
+                          <option value="No" selected>No</option>
+                          <option value="Yes">Yes</option>
+                        </select>
+                        <span class="select-highlight"></span>
+                        <span class="select-bar"></span>
+                        <label class="select-label">Do you have a passport ?</label>
+                      </div>
+                      <!--Select with pure css-->
+
+                    </div>
+                    <div class="md-form hide" id="divPassportNumber">
+                      <input type="text" name="PassportNumber" class="form-control">
+                      <label for="form1" class="">Passport Number</label>
+                    </div>
+                    <!-- /.Basic textbox -->
+                    <br />
+                    <div class="text-xs-left">
+                      <button class="btn btn-primary" onclick="GenerateXMLView()" data-toggle="modal"
+                        data-target="#exampleModal"><i class="far fa-image "></i> Generate XML</button>
+                      <button class="btn btn-primary" onclick="download(this.form)"><i class="fas fa-download"></i>
+                        Download</button>
+                    </div>
+                  </form>
+                </div>
+
+                <!--Naked Form-->
+              </div>
+            </div>
+          </div>
+          <!--Grid row-->
+        </div>
+
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modelBodyXMLView">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <!--/.Call to action-->
+
+
+    <!-- Social icons -->
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+    $(document).ready(function (e) {
+      $("form").submit(function (e) {
+        e.preventDefault();
+      });
+      $('#cboHavePassport').change(function (e) {
+        e.preventDefault();
+        if ($(this).val() == "Yes") {
+          $('#divPassportNumber').removeClass('hide');
+        } else {
+          $('#divPassportNumber').addClass('hide');
+        }
+      });
+
+    });
+
+    function downloadData(contentType, data, filename) {
+      var link = document.createElement("A");
+      link.setAttribute("href", encodeURI("data:" + contentType + "," + data));
+      link.setAttribute("style", "display:none");
+      link.setAttribute("download", filename);
+      document.body.appendChild(link); //needed for firefox
+      console.log(link.outerHTML);
+      link.click();
+      setTimeout(function () {
+        document.body.removeChild(link);
+      }, 1000);
+    }
+
+    function fromToXml(form) {
+      var xmldata = ['<?xml version="1.0"?>'];
+      xmldata.push("<user>");
+      var inputs = form.elements;
+      debugger;
+      for (var i = 0; i < inputs.length; i++) {
+        var el = document.createElement("ELEMENT");
+        if (inputs[i].name) {
+          var tagName = inputs[i].name;
+          var tagValue = inputs[i].value;
+          if (inputs[i].name == "PassportNumber") {
+            if (inputs.HavePassport && inputs.HavePassport.value == "No") {
+              tagValue = '';
+            }
+          }
+          xmldata.push("<" + tagName + ">" + tagValue + "</" + tagName + ">");
+        }
+      }
+      xmldata.push("</user>");
+      return xmldata.join("\n");
+    }
+    function GenerateXMLView() {
+      var frm = $('form')[0];
+      var data = fromToXml(frm);
+      if (data) {
+        document.getElementById('modelBodyXMLView').innerText = data;
+      }
+    }
+
+    function download(frm) {
+      var data = fromToXml(frm);
+      var date = new Date().toISOString();
+      downloadData("text/xml", data, "GeneratedXML_" + date + ".xml");
+    }
+  </script>
+</body>
+
+</html>
