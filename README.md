@@ -17,3 +17,4 @@ Facebook : https://www.facebook.com/crediblesinfotech
 
 Stackoverflow : https://stackoverflow.com/users/11827756/kalpesh-dabhi
 
+It is totaly free to use, you can download, fork, share, edit or commercial use also.
