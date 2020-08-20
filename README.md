@@ -19,4 +19,4 @@ Stackoverflow : https://stackoverflow.com/users/11827756/kalpesh-dabhi
 
 It is totaly free to use, you can download, fork, share, edit or commercial use also.
 
-:star2:Don't forget to star star2 the repo if you like our :star2::heart::green_heart::heart::green_heart:
+:star2:Don't forget to star  the repo if you like our :star2::heart::green_heart::heart::green_heart:
